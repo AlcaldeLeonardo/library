@@ -26,6 +26,7 @@ main{
 
 .card {
     width: 15%;
+    min-width: 150px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.205);
@@ -87,4 +88,14 @@ main{
 }
 .cardPlus__btn:hover{
     color: #31406b;
+}
+
+.modalContainer{
+    background-color: rgba(0, 0, 0, 0.233);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
