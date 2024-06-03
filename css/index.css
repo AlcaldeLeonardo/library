@@ -1,0 +1,90 @@
+body{
+    box-sizing: border-box;
+    background-color:#dbe4ff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.header{
+    background-color: #4F73E0;
+    padding: 1rem;
+}
+
+main{
+}
+
+.header__title{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.library{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    width: 15%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.205);
+    padding: 1rem;
+}
+
+.cardbook__title{
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+.cardbook__author, .cardbook__page, .cardbook__isRead {
+    margin-bottom: .2rem;
+}
+
+.cardbook__author::before{
+    content: "Author: ";
+}
+.cardbook__page::before{
+    content: "Pages: "
+}
+.cardbook__isRead::before{
+    content: "is Read: "
+}
+.cardbook__author::before, .cardbook__page::before, .cardbook__isRead::before, .title {
+    font-weight: bold;
+}
+
+.buttonBox{
+    display: flex;
+    justify-content:end;
+    gap: .5rem;
+    margin-top: 1rem;
+    color: rgba(31, 45, 85, 0.678);
+}
+
+.buttonBox__btn{
+    width: 2rem;
+}
+
+.btn{
+    fill: currentColor;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: black;
+}
+.cardPlus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    box-shadow: none;
+}
+.cardPlus__btn{
+    width: 5rem;
+    color: #6b81be;
+}
+.cardPlus__btn:hover{
+    color: #31406b;
+}
