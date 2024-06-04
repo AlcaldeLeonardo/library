@@ -9,9 +9,6 @@ body{
     padding: 1rem;
 }
 
-main{
-}
-
 .header__title{
     font-size: 1.5rem;
     color: white;
@@ -95,7 +92,7 @@ main{
     width: 100vw;
     height: 100vh;
     position: absolute;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
