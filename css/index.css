@@ -87,6 +87,10 @@ body{
     color: #31406b;
 }
 
+.cardPlus__btn:active{
+    color: #233057;
+}
+
 .modalContainer{
     background-color: rgba(0, 0, 0, 0.233);
     width: 100vw;
@@ -127,7 +131,21 @@ body{
 
 }
 
+.modal__btn:hover{
+    cursor: pointer;
+    background-color: #c1c9e2;
+}
+.modal__btn:active{
+    background-color: #8790ac;
+}
+
 .modal__btn--bgBlue{
     background-color: #4F73E0;
     color: white;
+}
+.modal__btn--bgBlue:hover{
+    background-color: #4261be;
+}
+.modal__btn--bgBlue:active{
+    background-color: #314da0;
 }
