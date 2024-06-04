@@ -2,7 +2,7 @@ export function renderCardBook(element) {
     const cardBook = document.createElement(`div`);
     const title = document.createElement(`h2`);
     const author = document.createElement(`p`);
-    const page = document.createElement(`p`);
+    const pages = document.createElement(`p`);
     const isRead = document.createElement(`p`);
     const buttonBox = document.createElement(`div`);
 
@@ -16,9 +16,9 @@ export function renderCardBook(element) {
     author.textContent = element.author;
     cardBook.appendChild(author);
 
-    page.className = `cardbook__page page`;
-    page.textContent = element.pages;
-    cardBook.appendChild(page);
+    pages.className = `cardbook__page pages`;
+    pages.textContent = element.pages;
+    cardBook.appendChild(pages);
 
     isRead.className = `cardbook__isRead isRead`;
     if (element.isRead) {
