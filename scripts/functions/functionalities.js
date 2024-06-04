@@ -6,6 +6,14 @@ const bookAuthor = document.querySelector(`#bookAuthor`);
 const bookPages = document.querySelector(`#bookPages`);
 const readStatus = document.querySelector(`#readStatus`);
 
+function validateData(){
+    if(bookTitle.value != `` && bookAuthor.value != `` && !Number.isNaN(Number(bookPages.value))) {
+        return true
+    }else {
+        alert("Data is missing, or perhaps you should make sure to put the number of pages in number format")
+    }
+}
+
 function resetInput(){
     bookTitle.value = ``
     bookAuthor.value = ``
@@ -40,8 +48,10 @@ export function addFunctionalities(array) {
     addBookBtn.addEventListener(`click`, () => showElementFlex(modalContainer));
     cancelBtn.addEventListener(`click`, () => closeElement(modalContainer));
     okBtn.addEventListener(`click`, () => {
-        addBookToLibrary(array);
-        closeElement(modalContainer);
-        renderLibrary(array);
+        if(validateData()){
+            addBookToLibrary(array);
+            closeElement(modalContainer);
+            renderLibrary(array);
+        }
     });
 }

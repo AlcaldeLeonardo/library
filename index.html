@@ -12,21 +12,21 @@
         <div class="modal card">
             <h2 class="modal__title title">Book Data</h2>
             
-            <label class="modal__label"for="bookTitle">Title</label>
             <input class="modal__input" id="bookTitle" name="bookTitle"type="text">
+            <label class="modal__label"for="bookTitle">Title</label>
 
-            <label class="modal__label"for="bookAuthor">Author</label>
             <input class="modal__input" id="bookAuthor" name="bookAuthor" type="text">
+            <label class="modal__label"for="bookAuthor">Author</label>
 
-            <label class="modal__label"for="bookPages">Pages</label>
             <input class="modal__input" id="bookPages" name="bookPages" type="text">
+            <label class="modal__label modal__label--last"for="bookPages">Pages</label>
 
-            <label for="readStatus">Is Read?</label>
-            <input id="readStatus" type="checkbox" name="readStatus">
+            <label class="modal__label--checkbox" for="readStatus">Is Read?</label>
+            <input class="modal__input--checkbox" id="readStatus" type="checkbox" name="readStatus">
 
             <div class="modal__buttonBox buttonBox">
-                <button id="okBtn" type="button" aria-label="Confirm">Ok</button>
-                <button id="cancelBtn" type="button" aria-label="Cancel">cancel</button>
+                <button class="modal__okBtn modal__btn modal__btn--bgBlue" id="okBtn" type="button" aria-label="Confirm">Ok</button>
+                <button class="modal__cancelBtn modal__btn" id="cancelBtn" type="button" aria-label="Cancel">Cancel</button>
             </div>
 
         </div>
@@ -35,7 +35,7 @@
         <h1 class="header__title title">Libray Project</h1>
     </header>
     <main class="main" id="root">
-        <div>
+        <div class="library">
             <div class="library cardsContainer" id="libraryDOM"></div>
 
             <div class="library__cardPlus cardPlus card">
