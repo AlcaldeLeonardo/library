@@ -21,7 +21,11 @@ export function renderCardBook(element) {
             cardBook.appendChild(page);
             
             isRead.className = `cardbook__isRead isRead`
-            isRead.textContent = element.isRead;
+            if(element.isRead) {
+                isRead.textContent = `Read`
+            }else {
+                isRead.textContent = `Not yet read`
+            }
             cardBook.appendChild(isRead);
 
             buttonBox.className = `cardbook__buttonBox buttonBox`
