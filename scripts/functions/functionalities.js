@@ -13,6 +13,11 @@ function validateData(){
         alert("Data is missing, or perhaps you should make sure to put the number of pages in number format")
     }
 }
+//This function will be exported to each book card
+export function deleteBook(array, index){
+    array.splice(index, 1);
+        renderLibrary(array);
+}
 
 function resetInput(){
     bookTitle.value = ``
