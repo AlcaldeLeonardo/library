@@ -19,6 +19,13 @@ export function deleteBook(array, index){
         renderLibrary(array);
 }
 
+export function changeReadStatus(array, index){
+    let book = array[index];
+
+    book.isRead = book.isRead ? false : true;
+        renderLibrary(array);
+}
+
 function resetInput(){
     bookTitle.value = ``
     bookAuthor.value = ``
