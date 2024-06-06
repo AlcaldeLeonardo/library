@@ -35,20 +35,20 @@ body{
     margin-bottom: .5rem;
 }
 
-.cardbook__author, .cardbook__page, .cardbook__isRead {
+.cardbook__author, .cardbook__pages, .cardbook__isRead {
     margin-bottom: .2rem;
 }
 
 .cardbook__author::before{
     content: "Author: ";
 }
-.cardbook__page::before{
+.cardbook__pages::before{
     content: "Pages: "
 }
 .cardbook__isRead::before{
     content: "is Read: "
 }
-.cardbook__author::before, .cardbook__page::before, .cardbook__isRead::before, .title {
+.cardbook__author::before, .cardbook__pages::before, .cardbook__isRead::before, .title {
     font-weight: bold;
 }
 

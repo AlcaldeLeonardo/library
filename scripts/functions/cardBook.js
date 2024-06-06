@@ -19,7 +19,7 @@ export function renderBookCard(array, element, index) {
     author.textContent = element.author;
     cardBook.appendChild(author);
 
-    pages.className = `cardbook__page pages`;
+    pages.className = `cardbook__pages pages`;
     pages.textContent = element.pages;
     cardBook.appendChild(pages);
 

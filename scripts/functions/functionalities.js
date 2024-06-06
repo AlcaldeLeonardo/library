@@ -3,11 +3,11 @@ import { renderLibrary } from "./renderLibrary.js";
 
 const bookTitle = document.querySelector(`#bookTitle`);
 const bookAuthor = document.querySelector(`#bookAuthor`);
-const bookPages = document.querySelector(`#bookPages`);
+const bookpages = document.querySelector(`#bookpages`);
 const readStatus = document.querySelector(`#readStatus`);
 
 function validateData(){
-    if(bookTitle.value != `` && bookAuthor.value != `` && !Number.isNaN(Number(bookPages.value))) {
+    if(bookTitle.value != `` && bookAuthor.value != `` && !Number.isNaN(Number(bookpages.value))) {
         return true
     }else {
         alert("Data is missing, or perhaps you should make sure to put the number of pages in number format")
@@ -22,13 +22,13 @@ export function deleteBook(array, index){
 function resetInput(){
     bookTitle.value = ``
     bookAuthor.value = ``
-    bookPages.value = ``;
+    bookpages.value = ``;
     readStatus.checked = false;
 }
 
 function addBookToLibrary(array) {
 
-    const book = new Book(bookTitle.value,bookAuthor.value,Number(bookPages.value),readStatus.checked)
+    const book = new Book(bookTitle.value,bookAuthor.value,Number(bookpages.value),readStatus.checked)
 
     array.push(book);
     resetInput();
