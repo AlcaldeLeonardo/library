@@ -46,7 +46,7 @@ function closeElement(element) {
 export function addFunctionalities(array) {
     const modalContainer = document.querySelector(`#modalContainer`);
 
-    const addBookBtn = document.querySelector(`.cardPlus__btn`);
+    const addBookBtn = document.querySelector(`.plusCard__btn`);
     const cancelBtn = document.querySelector(`#cancelBtn`);
     const okBtn = document.querySelector(`#okBtn`);
 

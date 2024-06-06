@@ -72,22 +72,22 @@ body{
     cursor: pointer;
     color: black;
 }
-.cardPlus{
+.plusCard{
     display: flex;
     justify-content: center;
     align-items: center;
     background: none;
     box-shadow: none;
 }
-.cardPlus__btn{
+.plusCard__btn{
     width: 5rem;
     color: #6b81be;
 }
-.cardPlus__btn:hover{
+.plusCard__btn:hover{
     color: #31406b;
 }
 
-.cardPlus__btn:active{
+.plusCard__btn:active{
     color: #233057;
 }
 
