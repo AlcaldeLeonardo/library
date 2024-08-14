@@ -1,9 +1,7 @@
-import { addFunctionalities } from "./functions/functionalities.js";
-import { renderLibrary } from "./functions/renderLibrary.js";
+import { addFunctionalities } from './functions/functionalities.js'
+import { renderLibrary } from './functions/renderLibrary.js'
 
+const library = []
 
-
-const library = [];
-
-renderLibrary(library);
-addFunctionalities(library);
+renderLibrary(library)
+addFunctionalities(library)
